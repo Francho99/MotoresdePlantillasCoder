@@ -1,0 +1,30 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<div class="container d-flex">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Imagen</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each productos}}
+    <tr>
+      <td scope="row">{{id}}</th>
+      <td><b>{{nombre}}</b></td>
+      <td><b>$</b>{{precio}}</td>
+      <td><img src="{{foto}}" alt="{{nombre}}"></td>
+    </tr>
+   {{/each}} 
+</table>
+</div>
+<div class="container d-flex"> 
+<form action="/">
+    <button type="submit" class="btn btn-dark">Ingresar otro producto</button>
+</form>
+</div>
+
